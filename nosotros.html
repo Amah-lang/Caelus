@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="shortcut icon" href="./assets/Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/nosotros.css">
+</head>
+<body>
+    <nav class="nav-menu">
+        <img src="./assets/Marca.svg" alt="logo">
+        <ul class="menu">
+            <li><a href="./index.html" class="p_bold">INICIO</a></li>
+            <li><a href="./nosotros.html" class="active p_bold">NOSOTROS</a></li>
+            <li><a href="./menu.html" class="p_bold">MENÚ</a></li>
+            <li><a href="./experiencia.html" class="p_bold">EXPERIENCIA</a></li>
+        </ul>
+        <button commandfor="reserva" command="show-modal" class="reserva p_bold">RESERVAR MESA</button>
+ 
+        <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+ 
+    <div class="mobile-menu-overlay" id="mobile-menu" role="dialog" aria-label="Menú de navegación">
+        <ul class="menu">
+            <li><a href="./index.html" class="p_bold">INICIO</a></li>
+            <li><a href="./nosotros.html" class="active p_bold">NOSOTROS</a></li>
+            <li><a href="./menu.html" class="p_bold">MENÚ</a></li>
+            <li><a href="./experiencia.html" class="p_bold">EXPERIENCIA</a></li>
+        </ul>
+        <button commandfor="reserva" command="show-modal" class="reserva p_bold" id="mobile-reserva-btn">RESERVAR MESA</button>
+    </div>
+
+    <dialog id="reserva">
+        <div class="dialog-contenido">
+            <h2 class="dialog-titulo">reservar mesa</h2>
+            <form id="reserva-form" method="dialog">
+                <div class="dialog-campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder=" " required>
+                </div>
+                <div class="dialog-campo">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder=" " required>
+                </div>
+                <div class="dialog-campo">
+                    <label for="telefono">Número de Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder=" " required>
+                </div>
+                <div class="dialog-campo">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="dialog-campo">
+                    <label for="zona">Zona del Café</label>
+                    <input type="text" id="zona" name="zona" placeholder=" ">
+                </div>
+                <div class="dialog-campo">
+                    <label for="detalles">Detalles de Reserva</label>
+                    <textarea id="detalles" name="detalles" rows="3" placeholder=" "></textarea>
+                </div>
+                <div class="dialog-botones">
+                    <button type="button" class="dialog-btn-cancelar p_bold" id="btn-cancelar">CANCELAR</button>
+                    <button type="submit" class="dialog-btn-enviar p_bold">ENVIAR SOLICITUD</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+    <header>
+        <div class="decoracion decoracion--izquierda">
+            <img src="./assets/Decoración3.png" alt="decoración griega">
+        </div>
+        <div class="nosotros-contenido">
+            <div class="nosotros-titulo">
+                <p>LA HISTORIA DE CAELUS</p>
+                <h1>nosotros</h1>
+            </div>
+            <div class="nosotros-cuerpo">
+                <div class="nosotros-imagen">
+                    <img src="./assets/Nosotros.png" alt="Interior de Caelus, arco iluminado con logo">
+                </div>
+                <div class="nosotros-texto">
+                    <p class="p_bold nosotros-frase">Caelus nació de un reto entre amigos y de un sueño que creció entre harinas, café y mucha pasión.</p><br>
+                    <p>Nuestra cocinera, mejor amiga de una de las personas que atiende el lugar, siempre llevaba a la universidad muestras de los postres que hacía. aún estaba aprendiendo, pero su talento era inegable.</p><br>
+                    <p>Un día su cuñado le dijo:<br>
+                    "Si haces un croissant realmente bueno,<br>
+                    te abro una cafetería."<br>
+                    Lo logró. Y así nació Caelus.</p>
+                </div>
+            </div>
+        </div>
+        <div class="decoracion decoracion--derecha">
+            <img src="./assets/Decoración3.png" alt="decoración griega">
+        </div>
+    </header>
+    <main>
+        <section class="caelus">
+            <div class="caelus-contenido">
+                <p>CAELUS</p>
+                <h2>dios del cielo</h2>
+                <div class="caelus-divider">
+                    <img src="./assets/Linea.svg" alt="linea decorativa">
+                    <img src="./assets/Estrella.svg" alt="estrella decorativa">
+                    <img src="./assets/Linea.svg" alt="linea decorativa">
+                </div>
+                <p>Caelus es, en la mitología romana, el dios del cielo, de lo infinito y lo etéreo. De él nace Caelus.<br><br>
+                Un lugar que busca conectar lo celestial con lo cotidiano, donde cada detalle está pensado para elevar tu experiencia.</p>
+                <h6>un rincón celestial para el alma y el paladar</h6>
+            </div>
+            <div>
+                <img src="./assets/Dioscaelus.png" alt="dios caelus">
+            </div>
+        </section>
+        <section class="filosofia">
+            <div class="filosofia-item">
+                <img src="./assets/Taza2.svg" alt="icono taza">
+                <p class="p_bold">PRODUCTOS RECIÉN HECHOS</p>
+                <p>Todo lo que servimos se prepara al momento con ingredientes de cálidad.</p>
+            </div>
+            <img src="./assets/Linea3.svg" alt="linea divisora" class="linea-divider">
+            <div class="filosofia-item">
+                <img src="./assets/Mascaras2.svg" alt="icono mascaras">
+                <p class="p_bold">TRATO DE DIOSES</p>
+                <p>Te recibimos como lo mereces: con atención personalizada y cercana.</p>
+            </div>
+            <img src="./assets/Linea3.svg" alt="linea divisora" class="linea-divider">
+            <div class="filosofia-item">
+                <img src="./assets/Sol2.svg" alt="icono sol">
+                <p class="p_bold">AMBIENTE PACÍFICO</p>
+                <p>Pequeños gestos que convierten cada visita en algo especial.</p>
+            </div>
+            <img src="./assets/Linea3.svg" alt="linea divisora" class="linea-divider">
+            <div class="filosofia-item">
+                <img src="./assets/Fruta2.svg" alt="icono fruta de café">
+                <p class="p_bold">CERCANÍA EN CADA DETALLE</p>
+                <p>Amamos cada paso del proceso, hasta el momento en que cada plato llega a tu mesa.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+         <div class="contactos">
+            <div class="contactos-grid">
+                <div class="contacto-columna">
+                    <h6>visítanos</h6>
+                    <div class="contacto-item">
+                        <img src="./assets/Lugar.svg" alt="icono ubicación" class="contacto-icono">
+                        <p>Tv. 41 #72-42, Laureles<br>Medellín, Antioquia</p>
+                    </div>
+                    <div class="contacto-item">
+                        <img src="./assets/Hora.svg" alt="icono horario" class="contacto-icono contacto-icono--hora">
+                        <p>Lunes a Sábado<br>9:00 a.m. - 6:00 p.m.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/Linea2.svg" alt="linea divisora">
+                </div>
+                <div class="contacto-columna">
+                    <h6>síguenos</h6>
+                    <div class="contacto-item">
+                        <img src="./assets/Instagram.png" alt="icono instagram" class="contacto-icono contacto-icono--social">
+                        <p>@caelus.bc</p>
+                    </div>
+                    <div class="contacto-item">
+                        <img src="./assets/TikTok.png" alt="icono tikTok" class="contacto-icono contacto-icono--social">
+                        <p>@caelus.bc</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/Linea2.svg" alt="linea divisora">
+                </div>
+                <div class="contacto-columna">
+                    <h6>Contáctanos</h6>
+                    <div class="contacto-item">
+                        <img src="./assets/Email.svg" alt="icono email" class="contacto-icono contacto-icono--email">
+                        <p>caelusbakerycoffe@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="derechos-reservados">
+                <img src="./assets/Copyright.png" alt="icono Copyright" class="copyright-icono">
+                <p class="p_bold derechos-texto">2026 Caelus Bakery &amp; Coffee. Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const mobileMenu   = document.getElementById('mobile-menu');
+        const mobileReservaBtn = document.getElementById('mobile-reserva-btn');
+        const reservaDialog = document.getElementById('reserva');
+        const btnCancelar = document.getElementById('btn-cancelar');
+        const reservaForm = document.getElementById('reserva-form');
+ 
+        function openMenu() {
+            hamburgerBtn.classList.add('open');
+            mobileMenu.classList.add('open');
+            hamburgerBtn.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
+        }
+ 
+        function closeMenu() {
+            hamburgerBtn.classList.remove('open');
+            mobileMenu.classList.remove('open');
+            hamburgerBtn.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
+ 
+        hamburgerBtn.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.contains('open');
+            isOpen ? closeMenu() : openMenu();
+        });
+ 
+        // Cerrar menú al hacer clic en un enlace
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+ 
+        // Botón "Reservar Mesa" en el overlay mobile: abre el dialog y cierra el menú
+        mobileReservaBtn.addEventListener('click', () => {
+            closeMenu();
+            setTimeout(() => reservaDialog.showModal(), 200);
+        });
+ 
+        // Botón cancelar: cierra el dialog
+        btnCancelar.addEventListener('click', () => {
+            reservaDialog.close();
+        });
+
+        // Cerrar al hacer clic en el backdrop
+        reservaDialog.addEventListener('click', (e) => {
+            const rect = reservaDialog.getBoundingClientRect();
+            const clickedOutside =
+                e.clientX < rect.left || e.clientX > rect.right ||
+                e.clientY < rect.top  || e.clientY > rect.bottom;
+            if (clickedOutside) reservaDialog.close();
+        });
+
+        // Envío del formulario
+        reservaForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('¡Solicitud enviada! Nos pondremos en contacto contigo pronto.');
+            reservaForm.reset();
+            reservaDialog.close();
+        });
+ 
+        // Cerrar menú con tecla Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+                closeMenu();
+            }
+        });
+    </script>
+</body>
+</html>
